@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 
 // Conexión a la base de datos
 mongoose
-    .connect('mongodb://127.0.0.1:27017/mascotas')
-    //.connect('mongodb+srv://danielarrti22:aGXTbm2kgLZ6o4Sm@cluster0.zq2tbrd.mongodb.net/empleados?retryWrites=true&w=majority&appName=Cluster0')
+    //.connect('mongodb://127.0.0.1:27017/mascotas')
+    .connect('mongodb+srv://danielarrti22:lbgLeS24Wyb5u6SF@cluster0.bjsxcdx.mongodb.net/mascotas?retryWrites=true&w=majority&appName=Cluster0')
     .then((x) => {
         console.log(`Conectado a la base de datos: ${x.connections[0].name}`);
     })
