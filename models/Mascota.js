@@ -10,7 +10,6 @@ let Mascota = new Schema({
     tipo: {
         type: String,  
         enum: ['Perro', 'Gato', 'Otro'], // Puedes ajustar los tipos de mascotas
-        required: true
     },
     fechaDeLlegada: {
         type: Date, // Tipo calendario
